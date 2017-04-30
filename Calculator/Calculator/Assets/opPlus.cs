@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class op+ : MonoBehaviour {
-	// Use this for initialization
+public class opPlus : MonoBehaviour {
 
-	public void OnClick () {
-    eqOperator = "/";
+	// Use this for initialization
+	void Start () {
+		
 	}
 	
 	// Update is called once per frame

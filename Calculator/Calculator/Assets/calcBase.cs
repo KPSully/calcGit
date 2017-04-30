@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class calc : MonoBehaviour
+public class calcBase : MonoBehaviour
 {
     public string eqOperator;
     public int eqValOne;
@@ -31,3 +31,4 @@ public class calc : MonoBehaviour
     }
 
 }
+
