@@ -1,18 +1,22 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class input1 : MonoBehaviour {
-    public cBase.equation eqValOne;
+public class input1 : MonoBehaviour
+{
+
     InputField input;
-	// Use this for initialization
-	void Start () {
-       eqValOne = int.Parse(input.text);
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public cBase.equation eqValOne;
+  //   Use this for initialization
+    public void FirstVal()
+   {
+        eqValOne = Parse(input.text);
+    }
+
+    private cBase.equation Parse(string text)
+    {
+        throw new NotImplementedException();
+    }
 }
