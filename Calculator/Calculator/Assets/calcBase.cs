@@ -11,19 +11,22 @@ public class calcBase: MonoBehaviour
     public int eqValTwo;
     public int eqOut;
     InputField input;
+    GameObject field;
     void Start()
     {
         eqOperator = "+";
         eqValOne = 0;
         eqValTwo = 0;
+       // input = gameObject.GetComponent<InputField>();
     }
     public void FirstVal()
     {
-        int eqValOne = Convert.ToInt32(gameObject.text);
+        gameObject
+        int eqValOne = Convert.ToInt32(input.text);
     }
     public void SecVal()
     {
-        int eqValTwo = Convert.ToInt32(input.text);
+            int eqValTwo = Convert.ToInt32(input.text);
     }
     public void Operator()
     {

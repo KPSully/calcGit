@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class input1 : MonoBehaviour
 {
     private InputField input;
-    public cBase.equation eqValOne;
+    cBase.equation eqValOne;
     //   Use this for initialization
     public void FirstVal()
     {
