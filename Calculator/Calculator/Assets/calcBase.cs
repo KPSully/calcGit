@@ -4,14 +4,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class cBase: MonoBehaviour 
+public class calcBase: MonoBehaviour 
 {
     public string eqOperator;
     public int eqValOne;
     public int eqValTwo;
     public int eqOut;
     InputField input;
-
+    void Start()
+    {
+        eqOperator = "+";
+        eqValOne = 0;
+        eqValTwo = 0;
+    }
     void FirstVal()
     {
         int eqValOne = Convert.ToInt32(input.text);
@@ -26,7 +31,11 @@ public class cBase: MonoBehaviour
     }
     void Update() 
     {
-        switch (eqOperator) 
+        if (Input.GetKey(KeyCode.Return))
+        {
+            print(eqOut);
+        }
+            switch (eqOperator) 
         {
             case "/":
                 eqOut = eqValOne / eqValTwo;
