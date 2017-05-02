@@ -7,6 +7,6 @@ public class opDiv : MonoBehaviour
     public cBase.equation eqOperator;
     public void OnClick()
     {
-       string eqOperator = "/";
+        eqOperator = "/";
     }
 }

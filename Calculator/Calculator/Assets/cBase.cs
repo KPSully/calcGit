@@ -41,5 +41,9 @@ public class cBase : MonoBehaviour
             }
         }
 
+        public static implicit operator equation(string v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
