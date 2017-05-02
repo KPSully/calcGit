@@ -17,19 +17,19 @@ public class calcBase: MonoBehaviour
         eqValOne = 0;
         eqValTwo = 0;
     }
-    void FirstVal()
+    public void FirstVal()
     {
-        int eqValOne = Convert.ToInt32(input.text);
+        int eqValOne = Convert.ToInt32(gameObject.text);
     }
-    void SecVal()
+    public void SecVal()
     {
         int eqValTwo = Convert.ToInt32(input.text);
     }
-    void Operator()
+    public void Operator()
     {
         eqOperator = "/";
     }
-    void Update() 
+    public void Update() 
     {
         if (Input.GetKey(KeyCode.Return))
         {
